@@ -1,0 +1,39 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('Home_background.png');
+    background-size: cover;
+  }
+  
+  .content {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: auto; /* Add this line */
+    margin-left: 120px; /* Adjust this value as needed */
+  }
+  
+  .links a {
+    display: block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .links a:hover {
+    background-color: #2980b9;
+  }
+  

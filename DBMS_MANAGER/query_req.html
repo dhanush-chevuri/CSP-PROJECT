@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="query_req.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: auto; /* Prevent horizontal scrolling */
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            width: 200px; /* Adjust the width as needed */
+            height: 100%; /* Ensure full height */
+            position: fixed; /* Keep it fixed */
+            top: 0; /* Position from top */
+            left: 0; /* Position from left */
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            margin-left: 200px; /* Adjust this to match nav width */
+            padding: 20px;
+            overflow-y: auto; /* Allow vertical scrolling */
+            min-width: 600px; /* Set a minimum width to ensure horizontal scrollbar always appears */
+        }
+
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Responsive table */
+        @media screen and (max-width: 600px) {
+            table {
+                overflow-x: auto;
+                display: block;
+            }
+
+            th, td {
+                white-space: nowrap;
+            }
+        }
+
+
+    .student {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin bottom to create space between student divs */
+}
+
+       /* CSS for inline style */
+       .inline-form {
+        display: inline-block;
+    }
+
+    .inline-form input[type="text"] {
+        padding: 10px; /* Increased padding */
+        width: 300px; /* Increased width */
+        border: 1px solid #ccc;
+        border-radius: 4px 0 0 4px;
+        font-size: 16px;
+    }
+
+    .inline-form button {
+        padding: 10px 16px; /* Increased padding */
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+        border-radius: 0 4px 4px 0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .inline-form button:hover {
+        background-color: #45a049;
+        border-color: #45a049;
+    }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="tables_view.html" >TABLES VIEW</a>
+        <a href="query_req.html" class="active">QUERY REQUEST</a>
+    </nav>
+
+    <div class="container">
+        <h2>TEACHER TABLE</h2> <BR>
+
+            <div class="inline-form">
+                <input type="text" id="textInput" placeholder="Enter text...">
+                <button type="submit" onclick="submitForm()">Query</button>
+            </div>
+            <div>
+                <h1>DANGEROUS INVALID QUERY MAY MAKE SERVER DOWN...!</h1>
+                <p>UPDATE table_name
+                    SET column1 = value1, column2 = value2, ...
+                    WHERE condition;
+                    </p>
+            </div>
+
+    </div>
+
+    <!-- Add more content here if needed -->
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <script src="tables_view.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: auto; /* Prevent horizontal scrolling */
+            overflow-y: auto; /* Allow vertical scrolling */
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            width: 200px; /* Adjust the width as needed */
+            height: 100%; /* Ensure full height */
+            position: fixed; /* Keep it fixed */
+            top: 0; /* Position from top */
+            left: 0; /* Position from left */
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+
+        .container {
+            margin-left: 200px; /* Adjust this to match nav width */
+            padding: 20px;
+            overflow-y: auto; /* Allow vertical scrolling */
+            min-width: 600px; /* Set a minimum width to ensure horizontal scrollbar always appears */
+        }
+
+        table {
+            width: 100%;
+            /* border-collapse: collapse; */
+            border-spacing: 0;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Responsive table */
+        @media screen and (max-width: 600px) {
+            table {
+                overflow-x: auto;
+                display: block;
+            }
+
+            th, td {
+                white-space: nowrap;
+            }
+        }
+
+
+    .student {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 20px; /* Add margin bottom to create space between student divs */
+}
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="tables_view.html" class="active">TABLES VIEW</a>
+        <a href="query_req.html">QUERY REQUEST</a>
+    </nav>
+
+    <div class="container">
+        <h2>TEACHER TABLE</h2> <BR>
+        <table id="teachersTable">
+            <thead>
+                <tr>
+                    <th>Teacher ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Date of Birth</th>
+                    <th>Gender</th>
+                    <th>Subject Taught</th>
+                    <th>Address</th>
+                    <th>Phone Number</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here using JavaScript -->
+            </tbody>
+        </table>
+
+        <table id="attendanceTable">
+            <h2>ATTENDENCE TABLE</h2> <BR>
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Days</th>
+                    <!-- Include more days here up to day 50 -->
+                    <th>Day 1</th>
+                    <th>Day 2</th>
+                    <th>Day 3</th>
+                    <th>Day 4</th>
+                    <th>Day 5</th>
+                    <th>Day 6</th>
+                    <th>Day 7</th>
+                    <th>Day 8</th>
+                    <th>Day 9</th>
+                    <th>Day 10</th>
+                    <th>Day 11</th>
+                    <th>Day 12</th>
+                    <th>Day 13</th>
+                    <th>Day 14</th>
+                    <th>Day 15</th>
+                    <th>Day 16</th>
+                    <th>Day 17</th>
+                    <th>Day 18</th>
+                    <th>Day 19</th>
+                    <th>Day 20</th>
+                    <th>Day 21</th>
+                    <th>Day 22</th>
+                    <th>Day 23</th>
+                    <th>Day 24</th>
+                    <th>Day 25</th>
+                    <th>Day 26</th>
+                    <th>Day 27</th>
+                    <th>Day 28</th>
+                    <th>Day 29</th>
+                    <th>Day 30</th>
+                    <th>Day 31</th>
+                    <th>Day 32</th>
+                    <th>Day 33</th>
+                    <th>Day 34</th>
+                    <th>Day 35</th>
+                    <th>Day 36</th>
+                    <th>Day 37</th>
+                    <th>Day 38</th>
+                    <th>Day 39</th>
+                    <th>Day 40</th>
+                    <th>Day 41</th>
+                    <th>Day 42</th>
+                    <th>Day 43</th>
+                    <th>Day 44</th>
+                    <th>Day 45</th>
+                    <th>Day 46</th>
+                    <th>Day 47</th>
+                    <th>Day 48</th>
+                    <th>Day 49</th>
+                    <th>Day 50</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Data will be inserted here using JavaScript -->
+            </tbody>
+        </table>
+
+
+        <div id="studentContainer">
+            <h2>STUDENT TABLE</h2> <BR>
+        </div>
+    </div>
+
+    <!-- Add more content here if needed -->
+
+</body>
+</html>
